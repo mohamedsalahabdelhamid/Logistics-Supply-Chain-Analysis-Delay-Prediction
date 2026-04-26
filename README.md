@@ -155,27 +155,6 @@ Ten distinct analytical queries were implemented using advanced T-SQL features:
 | Q9 | `vw_PODValidation` | VIEW + LEFT JOIN | Cross-references Delivered status with POD evidence for compliance |
 | Q10 | `vw_HubRevenueMonthly` | `VIEW + YEAR()/MONTH()/SUM()` | Monthly revenue aggregation per hub for financial reporting |
 
-**SQL Execution Proofs:**
-
-![SQL Q1](../Assets/14_SQL_Q1.png)
-![SQL Q2](../Assets/15_SQL_Q2.png)
-![SQL Q3](../Assets/16_SQL_Q3.png)
-![SQL Q4](../Assets/17_SQL_Q4.png)
-![SQL Q5](../Assets/18_SQL_Q5.png)
-![SQL Q6_1](../Assets/19_SQL_Q6_1.png)
-![SQL Q6_2](../Assets/20_SQL_Q6_2.png)
-![SQL Q7_1](../Assets/21_SQL_Q7_1.png)
-![SQL Q7_2](../Assets/22_SQL_Q7_2.png)
-![SQL Q8](../Assets/23_SQL_Q8.png)
-![SQL Q9](../Assets/24_SQL_Q9.png)
-![SQL Q10](../Assets/25_SQL_Q10.png)
-
-**SQL Views Created:**
-
-![View Q1](../Assets/26_View_Q1.png)
-![View Q3](../Assets/27_View_Q3.png)
-![View Q9](../Assets/28_View_Q9.png)
-![View Q10](../Assets/29_View_Q10.png)
 
 **Technical Highlights:**
 - **CTE with Window Functions (Q8):** Uses `ROW_NUMBER() OVER(PARTITION BY ShipmentID ORDER BY EventTime DESC)` to dynamically retrieve the most recent event per shipment, then filters for shipments where the last event was more than 48 hours ago.
