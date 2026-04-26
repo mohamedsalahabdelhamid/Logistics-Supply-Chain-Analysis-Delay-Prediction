@@ -1,0 +1,21 @@
+ReasonID,FailureReason
+1,Customer Not Available
+2,Wrong Address
+3,Customs Hold
+4,Weather Conditions
+5,Vehicle Breakdown
+6,Customer Refused
+7,Damaged in Transit
+8,Access Restricted
+9,Payment Not Ready
+10,Consignee Moved
+11,Lost in Transit
+12,Geopolitical Conflict
+13,Labor Strike
+14,Regulatory Hold
+15,Driver Shortage
+16,Flight Cancellation
+17,Leaking Package
+18,IT Outage
+19,Unreachable via Phone
+20,Theft/Pilferage

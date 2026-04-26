@@ -1,0 +1,101 @@
+MaterialID,MaterialName
+1,Auto Parts
+2,Steel Coils
+3,Electronics
+4,Textiles
+5,Pharmaceuticals
+6,Chemical Reagents
+7,Glass Panels
+8,Rubber Tires
+9,Copper Wire
+10,Aluminum Sheets
+11,Plastic Pellets
+12,Wood Planks
+13,Concrete Mix
+14,Paper Rolls
+15,Food Products
+16,Frozen Goods
+17,Medical Supplies
+18,Machinery Parts
+19,Furniture
+20,Ceramic Tiles
+21,Paint Drums
+22,Lubricants
+23,Fertilizer
+24,Grain
+25,Sugar
+26,Coffee Beans
+27,Cotton Bales
+28,Leather Hides
+29,Iron Ore
+30,Coal
+31,Crude Oil Drums
+32,Natural Gas Cylinders
+33,Solar Panels
+34,Batteries
+35,Cables
+36,Pipe Fittings
+37,Valves
+38,Pumps
+39,Generators
+40,Transformers
+41,Cement Bags
+42,Bricks
+43,Insulation Foam
+44,Fiberglass
+45,Carbon Fiber
+46,Titanium Rods
+47,Zinc Ingots
+48,Lead Sheets
+49,Nickel Plates
+50,Brass Fittings
+51,Stainless Steel Tubes
+52,PVC Pipes
+53,Polycarbonate Sheets
+54,Nylon Rope
+55,Silicone Sealant
+56,Epoxy Resin
+57,Adhesive Tape
+58,Cardboard Boxes
+59,Bubble Wrap
+60,Stretch Film
+61,Pallets
+62,Crates
+63,Drums
+64,Totes
+65,Containers
+66,Engine Components
+67,Transmission Gears
+68,Brake Pads
+69,Suspension Springs
+70,Exhaust Systems
+71,HVAC Units
+72,Compressors
+73,Conveyor Belts
+74,Bearings
+75,Fasteners
+76,Bolts and Nuts
+77,Welding Rods
+78,Abrasives
+79,Cutting Tools
+80,Drill Bits
+81,Safety Equipment
+82,Fire Extinguishers
+83,Protective Gear
+84,Hazmat Containers
+85,Lab Equipment
+86,Optical Instruments
+87,Precision Gauges
+88,Circuit Boards
+89,Semiconductor Chips
+90,LED Panels
+91,Display Screens
+92,Touchscreen Modules
+93,Antenna Arrays
+94,Server Racks
+95,Network Switches
+96,Fiber Optic Cables
+97,Satellite Components
+98,Drone Parts
+99,Robotics Arms
+100,3D Printer Filament

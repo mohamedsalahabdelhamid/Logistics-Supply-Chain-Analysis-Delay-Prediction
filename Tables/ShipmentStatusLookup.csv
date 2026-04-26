@@ -1,0 +1,7 @@
+StatusID,StatusName
+1,Created
+2,Arrived
+3,Departed
+4,Out for Delivery
+5,Delivered
+6,Failed
