@@ -191,7 +191,7 @@ Moving beyond descriptive statistics, a **Random Forest Classifier** was trained
 
 **Top Feature Importances (from Random Forest):**
 
-![Random Forest Feature Importance](../Assets/13_Random_Forest_Important_Features.png)
+![Random Forest Feature Importance]
 
 1. `TRANSPORTATION_DISTANCE_IN_KM` — Distance is the strongest predictor of delay
 2. `GpsProvider_VAMOSYS` — Using VAMOSYS significantly reduces delay probability
@@ -210,7 +210,7 @@ Moving beyond descriptive statistics, a **Random Forest Classifier** was trained
 
 The raw dataset (6,880 rows × 32 columns) exhibited significant quality issues upon initial inspection:
 
-![Missing Data Assessment](../Assets/01_Missing_Data_Assessment.png)
+![Missing Data Assessment]
 
 | Issue Category | Affected Columns | Impact |
 |---|---|---|
@@ -332,14 +332,14 @@ All categorical columns were audited for inconsistent casing, trailing whitespac
 
 **Distribution Insights (Q11):**
 
-![Numeric Distributions](../Assets/02_Numeric_Distributions.png)
+![Numeric Distributions]
 
 - Transportation Distance is heavily right-skewed — most trips are under 500km, but a long tail extends to ~3,000km (inter-state long-haul routes).
 - Latitude shows bimodal distribution with clusters around 12-13° (Tamil Nadu/Bangalore) and 18-28° (Maharashtra/North India).
 
 **Outlier Assessment (Q12):**
 
-![Boxplot Outliers](../Assets/03_Boxplot_Outliers.png)
+![Boxplot Outliers]
 
 - Using IQR method (1.5×IQR), outliers were found in Transportation Distance (long-haul routes) and coordinates.
 - **Decision:** Keep all outliers — in logistics, extreme distances and far-flung locations represent legitimate business operations, not data errors.
@@ -348,7 +348,7 @@ All categorical columns were audited for inconsistent casing, trailing whitespac
 
 **Top Categories (Q13):**
 
-![Categorical Distributions](../Assets/04_Categorical_Distributions.png)
+![Categorical Distributions]
 
 - **GPS Provider:** Top providers by volume (with delay rate implications)
 - **Vehicle Type:** 14 distinct vehicle types from small LCVs (Tata Ace) to heavy HCVs (40 FT Trailers)
@@ -363,7 +363,7 @@ All categorical columns were audited for inconsistent casing, trailing whitespac
 
 A dedicated temporal analysis was conducted examining how shipment volume and delay rates evolved across the 21-month dataset period:
 
-![Temporal Volume and Delay Analysis](../Assets/05_Temporal_Volume_Delay.png)
+![Temporal Volume and Delay Analysis]
 
 **Monthly Shipment Volume:**
 - Volume varies dramatically month-to-month, ranging from tens to over 1,600 trips
@@ -381,21 +381,21 @@ A dedicated temporal analysis was conducted examining how shipment volume and de
 
 **Correlation Matrix (Q15):**
 
-![Correlation Heatmap](../Assets/06_Correlation_Heatmap.png)
+![Correlation Heatmap]
 
 - Top 5 strongest numeric correlations were identified and visualized in a heatmap
 - Origin/Destination latitude pairs show moderate correlation (most routes share similar geographic bands)
 
 **Scatter Plots (Q16):**
 
-![Numeric Scatter Plots](../Assets/07_Numeric_Scatter_Plots.png)
+![Numeric Scatter Plots]
 
 - **Distance vs. Latitude by Delay Status:** Longer distances show higher delay density (red cluster), especially above 1,000km
 - **Origin vs. Destination Latitude:** Many trips cluster along the y=x diagonal (same-city or short-haul intra-state)
 
 ### 4.5 Category → Numeric: GPS Provider Impact on Delays (Q17)
 
-![Delay Rate by GPS Provider](../Assets/08_Delay_Rate_GPS.png)
+![Delay Rate by GPS Provider]
 
 | GPS Provider | Delay Rate | Trip Count | Rating |
 |---|---|---|---|
@@ -408,7 +408,7 @@ A dedicated temporal analysis was conducted examining how shipment volume and de
 
 ### 4.6 Category × Category: Vehicle Type vs. Delivery Status (Q18)
 
-![Delay Rate by Vehicle Type (Stacked)](../Assets/09_Delay_Rate_Vehicle_Stacked.png)
+![Delay Rate by Vehicle Type (Stacked)]
 
 A full crosstab (`pd.crosstab`) was generated for `vehicleType × delivery_status`:
 
@@ -418,7 +418,7 @@ A full crosstab (`pd.crosstab`) was generated for `vehicleType × delivery_statu
 
 ### 4.7 Multivariate Temporal Heatmap: Monthly Delay Risk (Q19)
 
-![Monthly Delay Risk Heatmap](../Assets/10_Monthly_Delay_Heatmap.png)
+![Monthly Delay Risk Heatmap]
 
 A heatmap of `GPS Provider × Month-Year → Delay Rate` was generated, revealing:
 
@@ -429,7 +429,7 @@ A heatmap of `GPS Provider × Month-Year → Delay Rate` was generated, revealin
 
 ### 4.8 Customer & Supplier Deep Dive
 
-![Customer and Supplier Dashboard](../Assets/11_Customer_Supplier_Dashboard.png)
+![Customer and Supplier Dashboard]
 
 A dedicated analysis of the **top 10 customers and suppliers** by shipment volume was conducted, with delay rates annotated for each:
 
@@ -447,7 +447,7 @@ A dedicated analysis of the **top 10 customers and suppliers** by shipment volum
 
 ### 4.9 Vehicle Type Performance Dashboard
 
-![Vehicle Type Performance Dashboard](../Assets/12_Vehicle_Performance.png)
+![Vehicle Type Performance Dashboard]
 
 A comprehensive vehicle type analysis examined delay rates, average distances, and trip durations for all vehicle categories with >20 trips:
 
