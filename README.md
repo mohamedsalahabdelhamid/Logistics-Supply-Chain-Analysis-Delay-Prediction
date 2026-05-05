@@ -1,4 +1,4 @@
-# 🚚 Logistics & Supply Chain: Delay Prediction & Network Optimization
+# 🚚 Logistics & Supply Chain: Comprehensive Delay Prediction & Network Optimization
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:36D1DC,50:5B86E5,100:232526&height=240&section=header&text=Logistics%20Network%20Analytics&fontSize=42&fontColor=ffffff&animation=fadeIn" alt="Header"/>
@@ -22,8 +22,55 @@
 
 ---
 
-## 📄 Project Narrative
-This project presents a high-level technical and operational evaluation of a **21-month logistics dataset** (March 2019 – December 2020). By implementing a normalized SQL database and a predictive Random Forest model, this project identifies a data-driven path to reducing delays and optimizing supply chain reliability.
+## 📊 Comprehensive Visual Analysis (EDA)
+This project includes an exhaustive exploratory data analysis covering all aspects of the supply chain network.
+
+### 🔍 1. Data Distribution & Correlation
+<p align="center">
+  <img src="https://raw.githubusercontent.com/mohamedsalahabdelhamid/Logistics-Supply-Chain-Analysis-Delay-Prediction/main/plots/plot_1.png" width="400" />
+  <img src="https://raw.githubusercontent.com/mohamedsalahabdelhamid/Logistics-Supply-Chain-Analysis-Delay-Prediction/main/plots/plot_2.png" width="400" />
+</p>
+<p align="center">
+  <i>Fig 1 & 2: Correlation Heatmap and Feature Distribution.</i>
+</p>
+
+### 🚛 2. Shipment & Hub Performance
+<p align="center">
+  <img src="https://raw.githubusercontent.com/mohamedsalahabdelhamid/Logistics-Supply-Chain-Analysis-Delay-Prediction/main/plots/plot_3.png" width="400" />
+  <img src="https://raw.githubusercontent.com/mohamedsalahabdelhamid/Logistics-Supply-Chain-Analysis-Delay-Prediction/main/plots/plot_4.png" width="400" />
+</p>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/mohamedsalahabdelhamid/Logistics-Supply-Chain-Analysis-Delay-Prediction/main/plots/plot_5.png" width="400" />
+  <img src="https://raw.githubusercontent.com/mohamedsalahabdelhamid/Logistics-Supply-Chain-Analysis-Delay-Prediction/main/plots/plot_6.png" width="400" />
+</p>
+
+### 🗺️ 3. Regional Delay Bottienecks
+<p align="center">
+  <img src="https://raw.githubusercontent.com/mohamedsalahabdelhamid/Logistics-Supply-Chain-Analysis-Delay-Prediction/main/plots/plot_7.png" width="400" />
+  <img src="https://raw.githubusercontent.com/mohamedsalahabdelhamid/Logistics-Supply-Chain-Analysis-Delay-Prediction/main/plots/plot_8.png" width="400" />
+</p>
+
+### ⏲️ 4. Temporal Trends & Fleet Efficiency
+<p align="center">
+  <img src="https://raw.githubusercontent.com/mohamedsalahabdelhamid/Logistics-Supply-Chain-Analysis-Delay-Prediction/main/plots/plot_9.png" width="400" />
+  <img src="https://raw.githubusercontent.com/mohamedsalahabdelhamid/Logistics-Supply-Chain-Analysis-Delay-Prediction/main/plots/plot_10.png" width="400" />
+</p>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/mohamedsalahabdelhamid/Logistics-Supply-Chain-Analysis-Delay-Prediction/main/plots/plot_11.png" width="400" />
+  <img src="https://raw.githubusercontent.com/mohamedsalahabdelhamid/Logistics-Supply-Chain-Analysis-Delay-Prediction/main/plots/plot_12.png" width="400" />
+</p>
+
+### 🛰️ 5. GPS Provider Reliability
+<p align="center">
+  <img src="https://raw.githubusercontent.com/mohamedsalahabdelhamid/Logistics-Supply-Chain-Analysis-Delay-Prediction/main/plots/plot_13.png" width="600" />
+</p>
+<p align="center">
+  <i>Fig 13: Comparative analysis of GPS downtime across different providers.</i>
+</p>
+
+---
+
+## 🛠️ Technical Implementation
 
 ### 🔄 Data Lifecycle Workflow
 ```mermaid
@@ -36,55 +83,16 @@ graph TD
     F --> G[Strategic Insights & Recommendations]
 ```
 
----
-
-## 🛠️ The Technical Core
-
-<details>
-<summary><b>1. Database Engineering (SQL)</b></summary>
-<br>
-Designed a 4-layer architecture with 7 major foreign key constraints.
-<ul>
-  <li><b>Reference Layer:</b> Status codes and reference types.</li>
-  <li><b>Core Entities:</b> Hubs, Customers, and Products.</li>
-  <li><b>Fleet Layer:</b> Staff and Vehicle tracking.</li>
-  <li><b>Transactional Layer:</b> Normalized shipment records.</li>
-</ul>
-</details>
-
-<details>
-<summary><b>2. Machine Learning Pipeline (Python)</b></summary>
-<br>
-Built a rigorous 6-stage transformation pipeline.
-<ul>
-  <li><b>Feature Selection:</b> Correlation analysis to find key delay predictors.</li>
-  <li><b>Modeling:</b> Random Forest Classifier for robust prediction.</li>
-  <li><b>Validation:</b> Confusion matrix and ROC-AUC for performance tracking.</li>
-</ul>
-</details>
-
----
-
-## 📊 Visual Insights & Data Discovery
-
-### 🗺️ Network Delay Heatmap
-Analysis of "Origin Hub" bottlenecks shows critical delays in specific geographic clusters.
-<p align="center">
-  <img src="https://raw.githubusercontent.com/mohamedsalahabdelhamid/Logistics-Supply-Chain-Analysis-Delay-Prediction/main/plots/plot_1.png" width="800" alt="Delay Plot 1"/>
-</p>
-
-### 📈 Temporal Volume vs. Reliability
-Correlation matrices uncovering the relationship between GPS providers and delivery status.
-<p align="center">
-  <img src="https://raw.githubusercontent.com/mohamedsalahabdelhamid/Logistics-Supply-Chain-Analysis-Delay-Prediction/main/plots/plot_13.png" width="400" alt="Plot 13"/>
-  <img src="https://raw.githubusercontent.com/mohamedsalahabdelhamid/Logistics-Supply-Chain-Analysis-Delay-Prediction/main/plots/plot_5.png" width="400" alt="Plot 5"/>
-</p>
+### 🧠 Model Architecture (Random Forest)
+*   **Preprocessing:** Handled high cardinality in `Origin Hub` and `Vehicle Type`.
+*   **Feature Selection:** Prioritized `Distance`, `Planned Travel Time`, and `Vehicle Age`.
+*   **Evaluation:** Used Confusion Matrix and ROC-AUC to ensure high precision in predicting delayed status.
 
 ---
 
 ## 🚀 Strategic Roadmap
-1.  **Infrastructural Fix:** Replace underperforming GPS providers identified in `plot_13`.
-2.  **Hub Optimization:** Prioritize resource allocation to high-delay hubs identified in EDA.
+1.  **Infrastructural Fix:** Replace underperforming GPS providers identified in the comparative analysis.
+2.  **Hub Optimization:** Prioritize resource allocation to high-delay hubs identified in regional analysis.
 3.  **Predictive Guard:** Deploy the Random Forest model to flag "At-Risk" shipments before they leave the origin.
 
 ---
@@ -96,5 +104,5 @@ Correlation matrices uncovering the relationship between GPS providers and deliv
 
 ---
 <div align="center">
-  <sub>Transforming Logistics through Data Science & Engineering 🚛</sub>
+  <sub>Optimizing Supply Chain Reliability through Predictive Analytics 🚚</sub>
 </div>
